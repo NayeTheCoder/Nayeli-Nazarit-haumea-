@@ -1,0 +1,16 @@
+#name {
+    font-family: "Dancing script", cursive;
+    font-size: 3rem;
+}
+
+h2 {
+    font-weight: bold;
+    font-size: 3em;
+}
+
+body {
+    background-color: rgb(34, 23, 158);
+    color: rgb(255, 136, 0);
+    font-size: 12px;
+  }
+ 
