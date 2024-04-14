@@ -1,0 +1,25 @@
+#name {
+    font-family: "Dancing script", cursive;
+    font-size: 3rem;
+    color:#2e4237;
+}
+
+body {
+    background-color:#787e60;
+    color: rgb(8, 12, 15);
+    font-size: 12px;
+    margin-right: auto;
+    text-align: center;
+  }
+  h2 {
+    font-weight: bold;
+    font-size: 3em;
+    color:#185443;
+    font-family:cursive;
+}
+
+ #linksection {
+    font-size: 2rem;
+    color: rgb(227, 16, 146);
+    font-style: italic;
+ }
