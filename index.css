@@ -1,12 +1,12 @@
 #name {
     font-family: "Dancing script", cursive;
     font-size: 3rem;
-    color:#2e4237;
+    color:#18261e;
 }
 
 body {
-    background: color #747b5b;;
-    color: rgb(8, 12, 15);
+    background-color:#8e9478;
+    color: rgb(218, 222, 225);
     font-size: 12px;
     margin-right: auto;
     text-align: center;
@@ -40,3 +40,53 @@ body {
     word-wrap:break-word;
     white-space: normal;
  }
+
+ /* Media query for desktop screens */
+@media only screen and (min-width: 768px) {
+    body {
+        font-size: 16px; 
+        text-align: left;
+        margin: 0 auto; 
+    }
+
+    #linksection {
+        font-size: 1.5rem;
+    }
+
+    .flex-container {
+        flex-direction: row; 
+    }
+
+    .flex-item {
+        width: 30%; 
+        margin: 0 10px; 
+    }
+}
+/* Media query for mobile screens */
+@media only screen and (max-width: 767px) {
+    body {
+        font-size: 14px; 
+        text-align: center; 
+    }
+
+    #name {
+        font-size: 2rem; 
+    }
+
+    h2 {
+        font-size: 2em; 
+    }
+
+    #linksection {
+        font-size: 1.2rem; 
+    }
+
+    .flex-container {
+        flex-direction: column; 
+    }
+
+    .flex-item {
+        width: 100%; 
+        margin: 0 0 20px 0; 
+    }
+}
