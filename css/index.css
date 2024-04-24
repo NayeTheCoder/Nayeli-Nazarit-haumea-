@@ -5,16 +5,16 @@
 }
 
 body {
-    background-color:#8e9478;
-    color: rgb(218, 222, 225);
-    font-size: 12px;
+    background-color: #fdf5df;
+    color: #932092;
+    font-size: 17px;
     margin-right: auto;
     text-align: center;
   }
   h2 {
     font-weight: bold;
     font-size: 3em;
-    color:#185443;
+    color:#f92c85;
     font-family:cursive;
 }
 
@@ -35,22 +35,33 @@ body {
  }
 
  .flex-item {
-    background: rgb(22, 85, 70);
-    color: rgb(240, 234, 234);
+    background: #93508f;
+    color: #fdefd3;
     word-wrap:break-word;
     white-space: normal;
  }
 
+ #connect2 a {
+    color: #008080;
+}
+
+#connect2 a:hover {
+    color: #004d4d; /* Change the color of the links on hover */
+}
+
+/* I am making it desktop friendly first */
  /* Media query for desktop screens */
 @media only screen and (min-width: 768px) {
     body {
         font-size: 16px; 
         text-align: left;
         margin: 0 auto; 
+        background-color: aliceblue;
     }
 
     #linksection {
         font-size: 1.5rem;
+        text-align: center;
     }
 
     .flex-container {
@@ -61,32 +72,16 @@ body {
         width: 30%; 
         margin: 0 10px; 
     }
-}
-/* Media query for mobile screens */
-@media only screen and (max-width: 767px) {
-    body {
-        font-size: 14px; 
-        text-align: center; 
-    }
-
     #name {
         font-size: 2rem; 
+        text-align: center;
     }
-
     h2 {
         font-size: 2em; 
+        color: rgb(215, 51, 51);
+        text-align: center;
     }
-
-    #linksection {
-        font-size: 1.2rem; 
-    }
-
-    .flex-container {
-        flex-direction: column; 
-    }
-
-    .flex-item {
-        width: 100%; 
-        margin: 0 0 20px 0; 
+    #connect2 {
+        text-align: center;
     }
 }
