@@ -21,8 +21,43 @@
     skillsList.appendChild(skillItem);
  }
 
+ // This is tthe message section
+var messageForm = document.forms.leave_message;
 
+messageForm.addEventListener('submit', function(event) {
 
+ event.preventDefault();
+
+ var userName = event.target.usersName.value;
+ var userEmail = event.target.usersEmail.value;
+ var userMessage = event.target.usersMessage.value;
+
+ console.log('Name', userName);
+ console.log('Email:', userEmail);
+ console.log('Message', userMessage);
+
+var messageSection = document.getElementById('messages');
+var messageList = messageSection.querySelector("ul");
+var newMessage = document.createElement("li");
+newMessage.innerHTML = '<a href="mailto:' + userEmail + '">' + userName + '</a>: <span>' + userMessage + '</span>';
+
+var removeButton = document.createElement("button");
+removeButton.innerText = "remove";
+removeButton.type = "button";
+
+removeButton.addEventListener('click', function() {
+    var entry = removeButton.parentNode;
+    entry.remove();
+});
+
+newMessage.appendChild(removeButton);
+
+messageList.appendChild(newMessage);
+
+ messageForm.reset();
+
+ return false;
+});
 
 
 
