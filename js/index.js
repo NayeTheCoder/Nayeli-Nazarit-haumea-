@@ -21,7 +21,7 @@
     skillsList.appendChild(skillItem);
  }
 
- // This is tthe message section
+ // This is the message section
 var messageForm = document.forms.leave_message;
 
 messageForm.addEventListener('submit', function(event) {
