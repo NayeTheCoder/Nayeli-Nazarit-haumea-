@@ -59,5 +59,32 @@ messageList.appendChild(newMessage);
  return false;
 });
 
+document.addEventListener('DOMContentLoaded', function() {
+    // Fetch GitHub repositories
+    fetch("https://api.github.com/users/NayeTheCoder/repos")
+    .then(response => {
+        if(!response.ok) {
+            throw new Error('Network response was not ok');
+        }
+        return response.json();
+    })
+    .then(data =>  {
+        // Get the projects section
+        console.log(data);
+        let projectsSection = document.getElementById('projects');
+        console.log('projectsSection:', projectsSection); // Log projectsSection
+        
+        let projectsList = document.getElementById("pros");
+        console.log('projectsList:', projectsList); // Log projectsList
 
-
+        // Loop through repositories and create list items for each project
+        data.forEach(repo => {
+            var project = document.createElement("li");
+            project.innerText = repo.name;
+            projectsList.appendChild(project);
+        });
+    })
+    .catch(error => {
+        console.error('There was a problem:', error);
+    });
+});
