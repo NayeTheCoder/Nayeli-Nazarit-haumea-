@@ -1,0 +1,169 @@
+/* This is my actual name */
+#name {
+    font-family: "Dancing script", cursive;
+    font-size: 3rem;
+    color:#161616;
+}
+
+/* Here I changed the background color, size, and center most of it*/
+body {
+    background-color: #fdf5df;
+    color: black;
+    font-size: 22px;
+    margin-right: auto;
+    text-align: center;
+  }
+
+  /* This changes the color, font, size of the headers of the sections in the body */
+  h2 {
+    font-weight: bold;
+    font-size: 3em;
+    color:rgb(207, 18, 96);
+    font-family:cursive;
+}
+
+#linksection {
+    font-size: 2rem;
+    font-style: italic;
+ }
+ #cover{
+    width:150px;
+}
+ /* These are for the Education, skills, and Project Section*/
+ .flex-container {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 0;
+    margin: 0 auto;
+    list-style: none;
+    }
+
+    .flex-item {
+        background: #93508f;
+        color: #fdefd3;
+        word-wrap:break-word;
+        white-space: normal;
+        margin: 0 auto;
+    }
+ /* This is the links under the connect header */
+ #connect2 a {
+    color: #42364b;
+}
+
+#connect2 a:hover {
+    color: #2e2643; /* Changes the color of the links on hover */
+}
+
+
+ /* Media query for tablet screens */
+@media  (min-width: 600px) {
+    body {
+        font-size: 30px; 
+        text-align: left;
+        margin: 0 auto; 
+        background-color: #beb6c3;
+    }
+
+    #linksection {
+        font-size: 1.5rem;
+        text-align: center;
+    }
+
+    .flex-container {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: center;
+    padding: 0;
+    margin: 0 auto;
+    list-style: none;
+    }
+
+    .flex-item {
+        background: #93508f;
+        color: #fdefd3;
+        word-wrap:break-word;
+        white-space: normal;
+        margin: 0 auto;
+    }
+    #name {
+        font-size: 4rem; 
+        text-align: center;
+    }
+    h2 {
+        font-size: 2em; 
+        color: black;
+        text-align: center;
+    }
+    #connect2 {
+        text-align: center;
+    }
+
+    #cover{
+        width:300px
+    }
+}
+
+#pros{
+    display:flex;
+    flex-wrap:wrap;
+    text-align:center;
+    padding: 5px 0px 5px 0px;
+    
+}
+
+#skillItem {
+    display:flex;
+    padding: 20px 2px 20px 25px;
+    width: 8rem;
+    text-align: center;
+    margin: 0 auto;
+}
+
+body {
+    text-align: center;
+}
+form {
+    display: inline-block;
+}
+ul {
+    list-style-type: none;
+  }
+
+
+/* Media Query for desktop */
+  @media (min-width: 1024px) {
+	@supports (display: grid) {
+		header {
+			grid-area: header;
+		}
+		nav {
+			grid-area: nav;
+		}
+		main {
+			grid-area: main;
+		}
+		footer {
+			grid-area: footer;
+		}
+	}
+
+    #cover{
+        width:400px
+    }
+
+    .flex-container {
+        flex-direction:column; 
+        justify-content: center;
+    }
+	
+	nav ul{
+		flex-direction: column;
+	}
+	
+    #name {
+        font-size:6rem;
+    }
+}
