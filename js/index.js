@@ -49,6 +49,7 @@ newMessage.innerHTML = '<a href="mailto:' + userEmail + '">' + userName + '</a>:
         const removeBtn = document.createElement("button");
         removeBtn.innerText = "delete";
         removeBtn.type = "button";
+        removeBtn.style = "background-color: red; margin-left: 7rem"
         removeBtn.addEventListener("click", function() {
             const entry = removeBtn.parentNode;
             entry.remove();
@@ -58,7 +59,7 @@ newMessage.innerHTML = '<a href="mailto:' + userEmail + '">' + userName + '</a>:
         });
 
         // This is to add the remove button to the new message
-        newMessage.appendChild(removeButton);
+        newMessage.appendChild(removeBtn);
 
         // This is to add the new message to the message list
         messageList.appendChild(newMessage);
